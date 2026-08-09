@@ -1,0 +1,33 @@
+name: Contract compatibility
+description: Report a difference between the SDK and the published API contract.
+title: "contract: "
+labels: [contract]
+body:
+  - type: input
+    id: operation
+    attributes:
+      label: Operation ID
+      placeholder: createBooking
+    validations:
+      required: true
+  - type: input
+    id: sdk-version
+    attributes:
+      label: SDK version
+      placeholder: 0.1.0-beta.1
+    validations:
+      required: true
+  - type: textarea
+    id: difference
+    attributes:
+      label: Contract difference
+      description: Link to the published contract and provide a synthetic example.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data check
+      options:
+        - label: I removed credentials and sensitive data.
+          required: true

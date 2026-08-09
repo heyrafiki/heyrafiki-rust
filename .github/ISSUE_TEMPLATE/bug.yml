@@ -1,0 +1,45 @@
+name: Bug report
+description: Report unexpected SDK behavior.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include API keys, personal information, health information, payment data or production request bodies.
+  - type: input
+    id: version
+    attributes:
+      label: SDK version
+      placeholder: 0.1.0-beta.1
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: TLS feature
+      options:
+        - rustls-tls
+        - native-tls
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include the expected behavior and a minimal synthetic reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Rust version, operating system and target triple.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data check
+      options:
+        - label: I removed credentials and sensitive data.
+          required: true

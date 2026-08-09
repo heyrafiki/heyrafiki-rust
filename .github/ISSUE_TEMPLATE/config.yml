@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/heyrafiki/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities privately.
+  - name: Developer support
+    url: https://docs.heyrafiki.space
+    about: Read the API and SDK documentation.
