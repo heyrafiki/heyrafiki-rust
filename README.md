@@ -2,19 +2,21 @@
 
 Async Rust client for the Heyrafiki API.
 
-> Source Preview. The API and this client are Beta. Use Sandbox projects while the first stable release is prepared.
-
 The client implements the operations published in the Heyrafiki OpenAPI 3.1
-contract. It does not contain clinical, financial, authorization or policy
-logic.
+contract. Domain rules remain server-owned while the client provides typed
+requests, bounded retries, idempotency and stable error evidence.
 
-## Install
+## Build from source
 
-The crate has not been published. For local evaluation, use a path dependency:
+Clone the public source and use a path dependency:
+
+```bash
+git clone https://github.com/heyrafiki/rafiki-rs.git
+```
 
 ```toml
 [dependencies]
-heyrafiki = { path = "../heyrafiki-rust" }
+heyrafiki = { path = "../rafiki-rs" }
 ```
 
 Rust 1.85 or newer is required. Keep API keys on the server.
@@ -100,7 +102,8 @@ cargo package
 ## Resources
 
 - [Documentation](https://docs.heyrafiki.space)
-- [API contract](https://github.com/heyrafiki/openapi)
+- [API contract](https://github.com/heyrafiki/contract)
+- [Open insurance assurance benchmark](https://github.com/heyrafiki/proving-ground)
 - [Security](https://github.com/heyrafiki/.github/blob/main/SECURITY.md)
 
 ## License

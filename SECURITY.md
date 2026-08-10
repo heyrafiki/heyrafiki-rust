@@ -6,5 +6,5 @@ Report vulnerabilities privately through the
 Do not include API keys, personal information, health information, payment
 data or production request bodies in a report.
 
-Supported versions will be listed after the first package release. Until then,
-the Source Preview receives security fixes on its default branch.
+The default branch and tagged releases receive security fixes according to the
+shared policy.

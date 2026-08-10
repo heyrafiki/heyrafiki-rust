@@ -1,7 +1,5 @@
 # Release process
 
-The crate is a Source Preview and has not been published.
-
 ## Release gates
 
 1. Confirm the pinned OpenAPI commit and run the contract conformance test.
