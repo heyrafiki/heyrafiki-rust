@@ -1,6 +1,6 @@
 //! Async Rust client for the Heyrafiki API.
 //!
-//! This Source Preview implements the operations in the pinned public `OpenAPI`
+//! The client implements the operations in the pinned public `OpenAPI`
 //! contract. Domain rules and data authority remain in the Heyrafiki Platform.
 //!
 //! API keys must remain in server-side environments. Reads and writes carrying
