@@ -54,7 +54,7 @@ jobs:
           toolchain: 1.97.1
       - name: Request a short-lived crates.io credential
         id: auth
-        uses: rust-lang/crates-io-auth-action@275b31c2bd0ae2dc5fc5b03747ab8c88d6e3b1c6 # v1
+        uses: rust-lang/crates-io-auth-action@f14f407dad32919804d8e0550a5e471a82249cee # v1
       - name: Publish crate
         run: cargo publish --locked
         env:
