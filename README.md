@@ -2,16 +2,16 @@
 
 Async Rust client for the Heyrafiki API.
 
-## Where this fits
+## What this SDK is for
 
-This SDK is the typed Rust entrypoint to Heyrafiki's versioned REST contract.
-It helps applications participate in governed Mental Healthcare workflows while
-authorization, Consent, clinical authority and financial decisions remain
-server-owned.
+Use this SDK to call the Heyrafiki API from a Rust service. It provides typed
+requests, predictable errors and idempotency support for retried writes. The
+platform applies access rules; clinical and financial decisions remain with the
+accountable people and organizations.
 
 The client implements the operations published in the Heyrafiki OpenAPI 3.1
-contract. Domain rules remain server-owned while the client provides typed
-requests, bounded retries, idempotency and stable error evidence.
+contract. It provides typed requests, bounded retries, idempotency and stable
+errors, while the platform keeps access rules and decision-making in one place.
 
 ## Build from source
 
